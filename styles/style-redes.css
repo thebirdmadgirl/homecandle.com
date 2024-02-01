@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: "Ubuntu";
+    text-align: center;
+    color: #a7754a;
+    font-size: 15px;
+    background: url(../img/2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+
+a {
+    color: #fff1c8;
+}
+
+.share {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -40px;
+    border-radius: 80px;
+}
+
+.share span {
+    width: 200px;
+    line-height: 80px;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.share nav {
+    font-size: 0;
+}
+
+.share a {
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ffffff;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.share a:nth-child(1) {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-left: 0;
+}
+
+.share a:nth-child(1):hover {
+    background-color: #61c5ec;
+}
+
+.share a:nth-child(2):hover {
+    background-color: #3B5998;
+}
+
+.share a:nth-child(3):hover {
+    background-color: #ea4335;
+}
+
+.share a:nth-child(4) {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 0;
+}
+
+.share a:nth-child(4):hover {
+    background-color: rgb(225 48 108);
+}
+
+.share:hover span,
+.share.hover span {
+    opacity: 0;
+}
+
+.share:hover a,
+.share.hover a {
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #89633b;
+    font-size: 28px;
+}
+
+.share:hover a:hover,
+.share.hover a:hover {
+    color: #fff;
+}
+/* BOTONERA */
+.botonera{
+    margin: auto;
+    width: 96%;
+    font-family: "ubuntu";
+    text-align: center;
+    font-size: 17px;
+    color: rgb(142, 104, 79);
+    text-shadow: 0px 0px 10px rgba(189, 135, 75, 0.354);
+    text-decoration: none;
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.botonera ul{
+    display: flex;
+    list-style: none;
+}
+.botonera a{
+    text-decoration: none;
+    color: rgb(142, 104, 79);
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    transition: 0.2s ease-in-out;
+}
+.botonera p{
+    margin-top: 4px;
+}
+.botonera a:hover{
+    color: rgb(109, 55, 36);
+    text-shadow: 0px 0px 10px rgba(109, 55, 36, 0.614);
+}
+.dropdown{
+    height: 40px;
+}
+.dropdown-cont {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    min-width: 120px;
+    z-index: 1;
+    margin-top: 10px;
+}
+  
+.dropdown-cont a{
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-cont{
+    display: block;
+}
+.dropdown-cont a:hover{
+    background-color: rgba(255, 255, 255, 0.58);
+}
+#logo{
+    height: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    margin-right: -20px;
+}
